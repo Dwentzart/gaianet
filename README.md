@@ -24,9 +24,6 @@ nano config.json
 ```
 * Cari bagian port 8080 dan ganti
 ```
-cd ..
-```
-```
 cd gaia-frp
 ```
 ```
