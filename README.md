@@ -2,13 +2,13 @@
 VRAM : 24GB
 
 
-Tested : RTX 3090 & 4090
+Tested : RTX 3090 & 4090 VRAM 24GB MAX 4 NODE
 
 ### Buat folder
 ```
 mkdir -p gaia
 ```
-### Install gaianet dan Config Port
+### Install gaianet
 ```
 curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/install.sh' | bash -s -- --ggmlcuda 12 --base $HOME/gaia
 ```
