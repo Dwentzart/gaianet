@@ -8,7 +8,7 @@ Tested : RTX 3090 & 4090
 ```
 mkdir -p gaia
 ```
-### Install gaianet dan config
+### Install gaianet dan Config Port
 ```
 curl -sSfL 'https://raw.githubusercontent.com/GaiaNet-AI/gaianet-node/main/install.sh' | bash -s -- --ggmlcuda 12 --base $HOME/gaia
 ```
@@ -17,19 +17,9 @@ gaianet init --base $HOME/gaia
 ```
 ### Edit Port
 ```
-cd gaia
+gaianet config --base $HOME/gaia --port 8101
 ```
-```
-nano config.json
-```
-* Cari bagian port 8080 dan ganti
-```
-cd gaia-frp
-```
-```
-nano frpc.toml
-```
-* Edit bagian port 8080 sesuain sama config.json
+
 ### Runing
 ```
 gaianet start --base $HOME/gaia
